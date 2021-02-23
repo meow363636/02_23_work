@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_23_숙제_러쉬</title>
+    
+    <!-- icons -->
+    <!-- <link rel="stylesheet" href="./icon/css/font-awesome.css"> -->
+    <!-- <script src="./icon/fontawesome.js"></script> -->
+    
+    <!-- reset.css style.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 오픈소스 jQuery 1.12.4 -->
+    <script src="./js/lib/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    <header id="header">
+       <h1 class="logo-wrap blind">로고</h1>     
+       <nav id="nav">
+           <ul>
+               <li>
+                   <a href="#" onclick='goUrl("main1")' class="main-btn">New</a>
+                   <div class="sub sub1">
+                       <ul>
+                           <li><a href="javascript:" onclick='goUrl("main1-1")' class="sub-btn">New Products</a></li>
+                           <li><a href="javascript:" onclick='goUrl("main1-2")' class="sub-btn">Easter</a></li>
+                           <li><a href="javascript:" onclick='goUrl("main1-3")' class="sub-btn">Coils and Texture</a></li>
+                           <li><a href="javascript:" onclick='goUrl("main1-4")' class="sub-btn">Get Your Beauty Sleep</a></li>
+                       </ul>
+                   </div>
+                </li>
+                <li>
+                   <a href="#"  onclick='goUrl("main2")' class="main-btn">Bath and Shower</a>
+                   <div class="sub sub2">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main2-1")' class="sub-btn">Bath Bombs</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-2")' class="sub-btn">Bubble Bars</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-3")' class="sub-btn">Bath Oils</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-4")' class="sub-btn">Little Lushes</a></li>
+                        </ul>
+                    </div>                
+                </li>
+                <li>
+                   <a href="#"  onclick='goUrl("main3")'  class="main-btn">Hair</a>
+                   <div class="sub sub3">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main3-1")' class="sub-btn">Shampoo Bars</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-2")' class="sub-btn">Shampoo</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-3")' class="sub-btn">Conditioners</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-4")' class="sub-btn">Hair Treatments</a></li>
+                        </ul>
+                    </div>                
+                </li>
+                <li>
+                   <a href="#" onclick='goUrl("main4")'  class="main-btn">Body</a>
+                   <div class="sub sub4">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main4-1")' class="sub-btn">Body Lotions</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-2")' class="sub-btn">Massage Bars</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-3")' class="sub-btn">Handcare</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-4")' class="sub-btn">Footcare</a></li>
+                        </ul>
+                    </div>                
+                </li>
+           </ul>
+       </nav>     
+    </header>
+    <main id="main">
+        <section id="section1">
+            
+            <div class="slide-container">
+                <div class="slide-view">
+                    <ul class="slide-wrap">
+                        <li class="slide slide2"></li>
+                        <li class="slide slide0"></li>
+                        <li class="slide slide1"></li>
+                        <li class="slide slide2"></li>
+                        <li class="slide slide0"></li>
+                    </ul>
+                </div>
+                
+                <!-- 좌우 화살버튼 -->
+                <span class="prev-btn-wrap"><a href="#" class="prev-btn"></a></span>
+                <span class="next-btn-wrap"><a href="#" class="next-btn"></a></span>
+
+            </div>
+
+        </section>
+        <section id="section2" class="clearfix">
+            <div class="column column1"> <!-- 칸 나누기 영역 -->
+                <div class="gap"> <!-- 칸 내부 여백 영역 -->
+
+                    <!-- 공지사항 타이틀 -->
+                    <div class="notice-title">
+                        <ul class="clearfix">
+                            <li>
+                                <h2>Event</h2>
+                            </li>   
+                            <li>
+                                <!-- <a href="https://www.bok.or.kr/museum/pgm/master/list.do?progrmSeCd=03&menuNo=700124" target='_blank'  title="more"><img src="./img/more.gif" alt="more"></a> -->
+                                <!-- <a href="https://www.bok.or.kr/museum/pgm/master/list.do?progrmSeCd=03&menuNo=700124#footer" target='_self'  title="more"><img src="./img/more.gif" alt="more"></a> -->
+                                <a href="javascript:void(0);" onclick='goUrl("noticeMore")' target='_self'  title="more"><img src="./img/more.gif" alt="more"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 공지사항 텍스트 목록 -->
+                    <div class="notice-content">
+                        <ul>
+                            <li>
+                                <span><a href="#" class="notice-btn" title='100인의 젤러쉬 챌린저스 : 젤러쉬 5기 절찬 모집중!'>100인의 젤러쉬 챌린저스 : 젤러쉬 5기 절찬 모집중!</a></span>
+                                <span>2021-02-17</span>
+                            </li>
+                            <li>
+                                <span><a href="#"  class="notice-btn" title='향기 축제 시작! : NEW 온라인 전용 보디스프레이 5종'>향기 축제 시작! : NEW 온라인 전용 보디스프레이 5종</a></span>
+                                <span>2021-02-16</span>
+                            </li>
+                            <li>
+                                <span><a href="#"  class="notice-btn" title='2월 포토 리뷰 이벤트 : 신선함이 머무는 한 컷'>2월 포토 리뷰 이벤트 : 신선함이 머무는 한 컷</a></span>
+                                <span>2021-02-15</span>
+                            </li>
+                            <li>
+                                <span><a href="#"  class="notice-btn" title='다운로드 러쉬 2월 : 사랑에 빠지는 순간'>다운로드 러쉬 2월 : 사랑에 빠지는 순간</a></span>
+                                <span>2021-02-14</span>
+                            </li>
+                            <li>
+                                <span><a href="#"  class="notice-btn" title='윤기나는 머릿결의 비밀 : NEW 아프로 헤어케어 5종'>윤기나는 머릿결의 비밀 : NEW 아프로 헤어케어 5종</a></span>
+                                <span>2021-02-13</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>  <!-- 칸 내부 여백 영역 -->              
+            </div>
+            <div class="column column2">              
+                <div class="gap"> <!-- 위아래여백 15px -->
+                    <div class="gallery-wrap">
+                        <ul>
+                            <li>
+                                <div> <!-- 배경이미지 좌우여백 15px 마주보는 여백은 1/2-->
+                                   <a href="#" class="gallery-btn" title='gallery'></a> 
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="gallery-btn" title='gallery'></a> 
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="gallery-btn" title='gallery'></a> 
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="gallery-btn" title='gallery'></a> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column column3" class="clearfix">
+                <div class="gap">
+                    <div class="banner-btn1">
+                        <a href="https://lush.co.kr/goods/goods_view.php?goodsNo=1000001312" target='_self'  title="banner1">
+                            <img src="./img/banner1.jpg" alt="banner1">
+                        </a>
+                    </div>
+                    <div class="banner-btn2">
+                        <a href="https://lush.co.kr/goods/goods_view.php?goodsNo=1000000085" target='_self'  title="banner2">
+                            <img src="./img/banner2.jpg" alt="banner2">
+                        </a>
+                    </div>
+                    <div class="banner-btn3">
+                        <a href="https://lush.co.kr/board/view.php?&bdId=article&sno=203&utm_source=&utm_medium=&utm_campaign=PC_campaign_vegan_210215" target='_self'  title="banner3">
+                            <img src="./img/banner3.jpg" alt="banner3">
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="clearfix">
+        <div class="left-wrap">
+            <div class="footer1">
+                <span>
+                    <br> 고객센터 <br> 1644-2357 <br> webmaster@lush.co.kr <br> <br> 상담전화  13:00~16:00(평일) <br> 상담톡 10:00~16:00(평일)  
+                </span>
+            </div>
+            <div class="footer2">
+            </div>
+            <div class="footer3">
+                <span>
+                    <br>
+                    서울특별시 서초구 서운로 138 ㅣ 사이트 운영자 : 주식회사 러쉬코리아
+                    <br>
+                    사업자 등록번호 : 201-81-77964 사업자 정보 확인 ㅣ 개인정보보호책임자 : 우승용
+                </span>
+            </div>
+
+        </div>
+        <div class="right-wrap">
+            <div class="sns-wrap">
+                <div class="gap">
+                    <div class="sns1">
+                        <a href="https://www.facebook.com/lushkorea" target='_blanks'  title="Facebook">
+                            <img src="./img/sns1.jpg" alt="sns1">
+                        </a>
+                    </div>
+                    <div class="sns2">
+                        <a href="https://instagram.com/lushkorea/" target='_blanks'  title="Instagram">
+                            <img src="./img/sns2.jpg" alt="sns2">
+                        </a>
+                    </div>
+                    <div class="sns3">
+                        <a href="https://www.youtube.com/user/LUSHKOREA1" target='_blanks'  title="Youtube">
+                            <img src="./img/sns3.jpg" alt="sns3">
+                        </a>
+                    </div>
+                    <div class="sns4">
+                        <a href="https://pf.kakao.com/_VEbUM" target='_blanks'  title="KakaotalkCh">
+                            <img src="./img/sns4.jpg" alt="sns4">
+                        </a>
+                    </div>
+                    <div class="sns5">
+                        <a href="https://m.post.naver.com/lushkr1" target='_blanks'  title="NaverPost">
+                            <img src="./img/sns5.jpg" alt="sns5">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="family-wrap">
+                <div class="gap">
+                    <!-- <form name="폼이름" id="폼이름" method="전송방식" action="응답하는서버사이드스크립트"> -->
+                    <form name="familyForm" id="familyForm" method="" action="response.php">
+                         <!-- 셀렉트 박스는 반드시 클릭이벤트를 onchange를 사용한다. -->
+                        <select name="family" id="family" onchange="goFamily(familyForm.family.value);">
+                            <option value="">Family Site</option>
+                            <option value="https://www.facebook.com/lushkorea">Facebook</option>
+                            <option value="https://instagram.com/lushkorea/">Instagram</option>
+                            <option value="https://www.youtube.com/user/LUSHKOREA1">Youtube</option>
+                            <option value="https://pf.kakao.com/_VEbUM">KakaotalkCh</option>
+                            <option value="https://m.post.naver.com/lushkr1">NaverPost</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>  <!-- wrap  1000 * 650 -->
+
+
+<!-- 모달창(레이어 팝업창) 공지사항 -->
+<div id="modal">
+    <div class="gap">
+        <div class="content">
+            <h1 class='notice-text'></h1>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달창(레이어 팝업창) 갤러리 -->
+<div id="modalGallery">
+    <div class="gap"> <!-- 850 * 850 -->
+        <div class="content-gallery">  <!-- 배경이미지 -->
+            
+        </div>
+    </div>   
+</div>
+
+
+<script src="./js/intro.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
